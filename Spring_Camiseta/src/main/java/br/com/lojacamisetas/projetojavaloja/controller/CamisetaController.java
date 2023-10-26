@@ -33,7 +33,7 @@ import javax.validation.Valid;
 @RestController
 @Log4j2
 @RequiredArgsConstructor
-@addCorsMapping("/camisetas/**", "https://angular-loja-de-camisetas.vercel.app");
+@CrossOrigin(origins = "https://angular-loja-de-camisetas.vercel.app")
 @RequestMapping("/camisetas") //receberá as requisições feitas à URL ex :http://localhost:8080/camisas/requisicao
 public class CamisetaController {
 	private final DateUtil dateUtil;
